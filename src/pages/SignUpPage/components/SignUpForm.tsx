@@ -23,9 +23,13 @@ interface ErrorState {
 }
 
 const SignUpForm: React.FC = () => {
+    const navigate = useNavigate();
+
   const useSignUpUsers = useMutation({
     mutationFn: postSignUpRequest,
     onSuccess: (data) => {
+            navigate('/login');
+
       console.log(data);
     },
     onError: (error) => {
