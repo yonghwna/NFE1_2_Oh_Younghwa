@@ -100,6 +100,5 @@ createRoot(document.getElementById('root')!).render(
       <RouterProvider router={router} />
       <ToastContainer limit={5} />
     </CookiesProvider>
-    <ReactQueryDevtools initialIsOpen={false} />
   </QueryClientProvider>,
 );
